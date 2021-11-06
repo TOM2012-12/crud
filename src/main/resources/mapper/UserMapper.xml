@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crud.dao.UserMapper">
+    <select id="selectUser" resultType="crud.bean.User">
+select * from tbl_user where userid=#{userid,jdbcType=VARCHAR} and password=#{password,jdbcType=VARCHAR};
+    </select>
+<select id="CheckUser" resultType="crud.bean.User">
+    select * from tbl_user where userid=#{userid,jdbcType=VARCHAR};
+</select>
+    <insert id="insertUser" parameterType="crud.bean.User">
+insert into tbl_user(userid,password) values(#{userid},#{password});
+    </insert>
+</mapper>
