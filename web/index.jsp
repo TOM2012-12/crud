@@ -81,6 +81,16 @@
 
 </form>
 <script type="text/javascript">
+    $(document).keyup(function(event){
+        if(event.keyCode ==13){
+            $("#submit_check").trigger("click");
+            //alert("hello");
+        }
+    });
+
+
+
+
     $("#submit_check").click(function () {
 
         $.ajax({
