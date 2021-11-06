@@ -26,7 +26,7 @@ public class Msg {
     public static Msg fail(){
         Msg res = new Msg();
         res.setCode(200);
-        res.setMsg("处理失败!");
+        res.setMsg("处理失败了!");
         return res;
     }
 
