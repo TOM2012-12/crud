@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-error
+error,please check
+  <a href="index.jsp">back</a>
 </body>
 </html>
