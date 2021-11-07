@@ -87,10 +87,6 @@
             //alert("hello");
         }
     });
-
-
-
-
     $("#submit_check").click(function () {
 
         $.ajax({
